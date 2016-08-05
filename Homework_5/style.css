@@ -1,0 +1,88 @@
+body {
+background: url(back.jpg);
+background-repeat: no-repeat;
+background-attachment:scroll;
+background-size:100%;
+font-family: Comic, cursive;
+font-size: 85px;
+
+
+
+
+
+}
+
+
+
+
+.main-menu {
+/*float:right;
+margin-top:30px;
+margin-left:340px;
+margin-right:385px;*/
+padding: 0px;
+list-style: none;
+border: 2px  #FFFAFA;
+/*width:603px;*/
+position: absolute;
+	 top: 0;
+	 left: 30%;
+	 background: none;
+	 outline: none;
+
+}
+.main-menu li {
+display: block;
+margin-right: -4px;
+
+}
+.main-menu a {
+text-decoration: none;
+display: block;
+padding: 8px 10px;
+color:#800000;
+margin-left:-4px;
+}
+.main-menu a:hover {
+color:#FFD700;
+}
+
+.one{
+	margin-left:337px;
+	margin-top:-40px;
+}
+
+.cast{
+	margin-left:350px;
+	margin-top:140px;
+	font-family: Comic, cursive;
+	font-size: 40px;
+	color:white;
+}
+.season1{
+	margin-left:300px;
+	list-style: none;
+}
+
+.season1 li {
+display:block;
+}
+
+.season1 a {
+text-decoration: none;
+display: block;
+color:white;
+}
+
+.season1 a:hover {
+color: #EEC900;
+}
+
+.season1 li:nth-child(2) a:hover{
+	color:#76EE00;
+}
+
+iframe{
+	border-radius:3px;
+	box-shadow:15px 15px 20px rgba(0,0,0,0.5);
+}
