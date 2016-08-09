@@ -5,14 +5,16 @@
   <meta charset="utf-8">
   <title>Anastasia Kostiv</title>
   <script>
-  var plus = [7, 16, 32];
-  function number(sum){
+  function number(x, y, z){
+    var plus = [];
+    plus.push(x, y, z);
     for(var a = 0; a < plus.length; a++){
-      sum = sum + plus[a];
+    var sum = 0;
+    sum = sum + plus[a];
     }
     return Math.round(sum/3);
   }
-  console.log(number(0));
+  console.log(number(13, 15, 78));
   </script>
 </head>
 <body>
