@@ -5,16 +5,26 @@
   <meta charset="utf-8">
   <title>Anastasia Kostiv</title>
   <script>
+/*
   function number(x, y, z){
     var plus = [];
-    plus.push(x, y, z);
-    for(var a = 0; a < plus.length; a++){
     var sum = 0;
+    plus.push(x, y, z);
+      for(var a = 0; a < plus.length; a++){
+        sum = sum + plus[a];
+      }
+    return Math.round(sum/3);
+  }
+  console.log(number(13, 15, 78));
+*/
+  function number(plus){
+    var sum = 0;
+    for(var a = 0; a < plus.length; a++){
     sum = sum + plus[a];
     }
     return Math.round(sum/3);
   }
-  console.log(number(13, 15, 78));
+  console.log(number([2, 8, 5]));
   </script>
 </head>
 <body>
