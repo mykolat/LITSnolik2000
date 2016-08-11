@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <link href = "style.css" rel = "stylesheet">
+  <meta charset="utf-8">
+  <title>Anastasia Kostiv</title>
+  <script>
+/*
+function multiplication(a, b){
+  var sum = 0;
+      for (var i = 0; i < b; i++){
+        sum += a;
+      }
+    return sum;
+}
+console.log(multiplication(8, 9));
+*/
+/*    function multiplication(a, b){
+      var sum = 0;
+        if (a > b){
+          for (var i = 0; i < b; i++){
+            sum += a;
+          }
+        }else{
+          for (var i = 0; i < a; i++){
+            sum += b;
+          }
+        }
+        return sum;
+    }
+    console.log(multiplication(8, 9)); */
+
+    function multiplication(a, b){
+      var sum = 0;
+          for (var i = 0; i < Math.min(a, b); i++){
+            sum += Math.max(a, b);
+          }
+        return sum;
+    }
+    console.log(multiplication(8, 9));
+  </script>
+</head>
+<body>
+  <a href="index.html"><img src = "back.png" width = 250px></a>
+</body>
+</html>
