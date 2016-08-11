@@ -18,7 +18,7 @@
 */
       function multiplication(a, b){
         if (Math.min(a, b) == 1){
-          return a;
+          return Math.max(a, b);
         }else{
           return Math.max(a, b) + multiplication(Math.max(a, b), Math.min(a, b) - 1);
         }
