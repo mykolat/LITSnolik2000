@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <link href = "style.css" rel = "stylesheet">
+  <meta charset="utf-8">
+  <title>Anastasia Kostiv</title>
+  <script>
+
+    function reverseArray(arr){
+      var NewArr = [];
+      for (var i = 0; i < arr.length + arr.length + 1; i++){
+      NewArr.push(arr.pop(i));
+      }
+      return NewArr;
+    }
+
+    function reverseArrayInPlace(NewArr){
+      var arr = [];
+      for (var i = 0; i < NewArr.length + NewArr.length + 1; i++){
+      arr.push(NewArr.pop(i));
+      }
+      return arr;
+    }
+
+      console.log(reverseArrayInPlace(reverseArray([1, 2, 3,])));
+  </script>
+</head>
+<body>
+  <a href="index.html"><img src = "back.png" width = 250px></a>
+</body>
+</html>
