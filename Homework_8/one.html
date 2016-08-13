@@ -5,36 +5,24 @@
   <meta charset="utf-8">
   <title>Anastasia Kostiv</title>
   <script>
- function range(a, b, c){
+  function range(a, b, c){
     if(c == null){
       c == 1;
     }
       var line = [];
-      if(c > 0 && a < b){
-        for(var i = a; i <= b; i += c){
-          if(a <= i && i <= b){
+      if(c > 0){
+        for(var i = Math.min(a, b); i <= Math.max(a, b); i += c){
+          if(Math.min(a, b) <= i && i <= Math.max(a, b)){
             line.push(i);
           }
         }
-      }else if(c < 0 && a > b){
-          for(var i = b; i <= a; i -= c){
-            if(b <= i && i <= a){
-              line.push(i);
+      }else{
+          for(var i = Math.min(a, b); i <= Math.max(a, b); i -= c){
+          if(Math.min(a, b) <= i && i <= Math.max(a, b)){
+            line.push(i);
           }
         }
-      }else if(c < 0 && a < b){
-        for(var i = a; i <= b; i -= c){
-          if(a <= i && i <= b){
-            line.push(i);
-        }
       }
-    }else{
-      for(var i = b; i <= a; i += c){
-        if(b <= i && i <= a){
-          line.push(i);
-      }
-    }
-    }
         return line
     }
 
@@ -46,7 +34,7 @@
         return z;
       }
 
-      console.log(sum(range(2, 8, -1)));
+      console.log(sum(range(2, 8, 2)))
   </script>
 </head>
 <body>
