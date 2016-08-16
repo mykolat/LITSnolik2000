@@ -1,43 +1,32 @@
 body {
-background: url(back.jpg);
-background-repeat: no-repeat;
-background-attachment:scroll;
-background-size:100%;
-font-family: Comic, cursive;
-font-size: 85px;
-
-
-
-
-
+    background: url(back.jpg);
+    background-repeat: no-repeat;
+    background-attachment: scroll;
+    background-size: 100%;
+    font-family: Comic, cursive;
+    font-size: 85px;
 }
-
-
-
-
 .main-menu {
-padding: 0px;
-list-style: none;
-border: 2px  #FFFAFA;
-position: absolute;
-	 top: 0;
-	 left: 30%;
-	 background: none;
-	 outline: none;
-
+    padding: 0px;
+    list-style: none;
+    border: 2px #FFFAFA;
+    position: absolute;
+    top: 0;
+    left: 30%;
+    background: none;
+    outline: none;
 }
 .main-menu li {
-display: block;
-margin-right: -4px;
-
+    display: block;
+    margin-right: -4px;
 }
 .main-menu a {
-text-decoration: none;
-display: block;
-padding: 8px 10px;
-color:#800000;
-margin-left:-4px;
+    text-decoration: none;
+    display: block;
+    padding: 8px 10px;
+    color: #800000;
+    margin-left: -4px;
 }
 .main-menu a:hover {
-color:#FFD700;
+    color: #FFD700;
 }
