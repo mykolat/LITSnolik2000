@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Anastasia Kostiv</title>
+    <meta charset="utf-8">
+</head>
+
+<body>
+
+
+    <button onclick="start()">Start</button>
+    <p id="text"></p>
+
+    <style>
+        html {
+            background-color: black;
+            color: white;
+        }
+
+        #text {
+            font-size: 500%;
+            margin-left: 5%;
+        }
+
+        button {
+            display: inline-block;
+            color: white;
+            font-weight: 700;
+            text-decoration: none;
+            user-select: none;
+            outline: none;
+            border: 2px solid;
+            border-radius: 1px;
+            transition: 0.2s;
+            background-color: black;
+            height: 300px;
+            width: 500px;
+            font-size: 200px;
+            margin-left: 30%;
+            margin-top: 3%;
+        }
+
+        button:hover {
+            background: rgba(255, 255, 255, .2);
+        }
+
+        button:active {
+            background: white;
+        }
+    </style>
+    <script>
+        var max = 130;
+        var min = 92;
+        var winner = 0;
+        var name = '';
+
+        function start() {
+            function Bike(name) {
+                this.name = name;
+                this.speed = Math.round(Math.random() * (max - min) + min);
+            }
+            var horses = [];
+            horses.push(new Bike('Lamus'));
+            horses.push(new Bike('Dino'));
+            horses.push(new Bike('Cubo'));
+
+            for (var i = 0; i < horses.length; i++) {
+                if (horses[i].speed > winner) {
+                    winner = horses[i].speed;
+                    name = horses[i].name;
+                }
+            }
+
+            console.log(name + ' ' + 'is a winner, his speed was:' + winner);
+            document.getElementById('text').innerHTML = (name + ' ' + 'is a winner, his speed was:' + winner);
+        }
+        /*var horse1 = new Bike('lama');
+    var horse2 = new Bike('Dino');
+    var horse3 = new Bike('Cubo');
+*/
+    </script>
+</body>
+
+</html>
