@@ -1,3 +1,8 @@
+#pic1 {
+      position: relative;
+      cursor: pointer;
+    }
+
 table {
 margin-top: 1%;
 font-family: "Lucida Sans Unicode", "Lucida Grande", Sans-Serif;
@@ -43,7 +48,3 @@ button:active {
   background: rgb(33,147,90);
   box-shadow: 0 3px rgb(33,147,90) inset;
 }
-#train {
-      position: relative;
-      cursor: pointer;
-    }
