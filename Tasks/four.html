@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Anastasia Kostiv</title>
+    <meta charset="utf-8">
+</head>
+
+<body>
+    <script>
+        var plus = [];
+
+        function findPlus(a, b, c){
+            var arr = [];
+            arr.push(a);
+            arr.push(b);
+            arr.push(c);
+            for (var i = 0; i < arr.length; i++) {
+                if (arr[i] > 0) {
+                    plus.push(arr[i]);
+                }
+            }
+
+            for (var j = 0; j < plus.length; j++) {
+                console.log(plus[j]);
+            }
+        }
+        findPlus(6, -8, 9);
+    </script>
+</body>
+
+</html>
