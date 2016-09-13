@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>FOR</title>
+  <meta charset="utf-8">
+</head>
+<body>
+  <script>
+    var c;
+    function find(a, b, n, sum = a+b, c){
+      if(c == null) c = a + b;
+      if(n > 3){
+        return find(a = b, b = c, n - 1, sum += c);
+      }else{
+        sum = sum +(a+b);
+        return [c, sum];
+      }
+
+    }
+    console.log(find(1, 1, 5));
+  </script>
+</body>
+</html>
